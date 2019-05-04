@@ -1,0 +1,8 @@
+*create a new dir with jekyll*
+	jekyll new <name-of-dir> 
+
+*start running the site*
+	jekyll serve
+
+*the _includes contain the html files that need to be dislayed*
+*and _layouts is the one thats going to render all the files consider it as react dom*

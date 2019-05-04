@@ -1,0 +1,7 @@
+there are different kinds of parsers 
+they affect in cases of imperfect html files
+	html5
+	lxml	
+	html
+all behave differently when they face a improper html code 	
+
