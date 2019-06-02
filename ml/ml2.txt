@@ -1,0 +1,45 @@
+model representation
+	
+	data(training set) ->	learning algo	->	function(hypothesis)
+													[this function will fetch u the required output]
+
+	function is in the form of ax+b then its a  univariate(single variable) linear regression(as we know) model
+
+Gradient descent practical aspects
+	scaling of data 
+		x1: 0 to 2000
+		x2: 0 to 5
+	scale both of them 
+		x1/2000
+		x2/5
+
+Feature scaling:
+	take xi divide it by its range
+Mean normalisation:
+	subtract from its average and divide by its range
+
+Learning Rate
+	should not be too small - slow convergence
+	should not be too large - may also diverge
+best way to test whether gradient descent is working or not:
+	draw a plot and for each iteration J(theta) should decrease
+	and at a certain ending stage : it becomes stagnant
+
+propsing own new features
+	if some hypothesis is like a+ b*l + c*b
+	l is length and b is breadth
+	you can produce some thing like A = l*b
+	hypo would become a + b*A	
+
+Polynomial Regression
+apart from linear regression , so u can fit any polynomial to fit to your data
+it means that the hypothesis can be either quad , or cubic or also fractional power as per ur choice
+hence it would be cause polynomial regression rather than linear regression..
+	ya but things like no. of minima will also change
+
+Normal equation 
+	instead of using the iterative appraoch,we used calculus, that is we just differentiate (partially) wrt each variable or param and equate it to zero
+	the result is we get reultant theta matrix as 
+	theta = (X' * X-1)*X'y
+	this is good and fast unless and until n is very very large
+	computation of inverse  be very costly!

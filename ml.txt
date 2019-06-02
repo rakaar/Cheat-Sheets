@@ -1,0 +1,19 @@
+Supervised ML:
+	Already a data set is given and the output should be predicted
+ 
+types:
+	Regression:
+		you are asked to predict a results with a continuos output.
+		eg: 2-d graph of housing price vs acres is given, you are asked to predict some intermediate value by estimating the plot(points) as a line or a quadratic
+	In simpler words: Mathematical prediction from a proper data\
+
+	Classification:
+		You need to classify to either this or that or any other among the options with the given parameters
+		eg: some parameters like- age,size of tumor of few patients are taken and data is given of which of these have cancer of type-1 and cancer of type-2. Now if age and size of tumor is given of some other guy, the task is to predict whether he has cancer of type-1 or cancer of type-2
+	In simpler words: Classifying this or that..(not necessarily two :P)	
+
+Unsupervised ML:
+		here u are given a large data set,it is the job of machine to classify into groups.
+		like an audio recording of 3 voices given the Machine will seperate it out into three  different voices
+		or like given a bunch of news articles the algo will classify based on the stories
+		or bunch of data given classifying into different segments

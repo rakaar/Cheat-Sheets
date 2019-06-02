@@ -1,0 +1,51 @@
+store : that holds the data ==== vault in the bank
+
+reducer : that interacts with the store ==== cashier
+		reducer takes two arguments
+		state: the state in react 
+		
+		store:
+		import { CreateStore } from 'redux'
+		const initialState={
+			name:'kaushik',
+			age:19
+		}
+		const store = createStore(reducer,initialState)
+
+
+		action:	dispatching of this action is going to update the state in 			store, 
+				action is an object... thats it
+				{
+					type :'DO_SOMETHINHG',
+					payload: {
+						name:'kaushik',
+						age:'19'
+					}
+				}
+
+				note:   type is a compulsory argument and keeping it in 			capital letters is a popular practice
+
+						payload is not compulsory but it is a popular practice to keep things in payload
+		store:
+		const reducer = (state,action) => {
+			if(action.type=='TYPE-1') {
+				//do x;
+				return state
+			}
+
+			else if (action.type =='TYPE-2'){
+				//DO y
+				return state				
+			}
+			else
+				return state
+		}				
+
+
+
+FOLDERS
+store 
+reducers 
+actions
+
+actions are created using actionCreators which are just simple function
